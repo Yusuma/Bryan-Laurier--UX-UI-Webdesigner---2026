@@ -35,7 +35,7 @@ Aucune installation nécessaire — c'est un site statique.
 1. Cloner le dépôt
 2. Ouvrir `index.html` dans un navigateur, ou déployer sur GitHub Pages
 
-##Screenshot
+## 🖼️ Screenshot
 
 <img width="1878" height="923" alt="Opera Instantané_2026-07-28_072522_yusuma github io" src="https://github.com/user-attachments/assets/e210e664-10ec-46c8-959f-4b38f3e27107" />
 
