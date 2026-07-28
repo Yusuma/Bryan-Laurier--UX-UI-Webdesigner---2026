@@ -242,3 +242,21 @@
     transition:background 0.15s ease, color 0.15s ease;
   }
   .modal-box a.behance-link:hover{background:var(--ink);color:var(--paper);}
+
+  .modal-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .modal-cancel{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    padding:13px 22px;
+    border:2px solid var(--ink);
+    background:transparent;
+    color:var(--ink);
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+    transition:background 0.15s ease, color 0.15s ease;
+  }
+  .modal-cancel:hover{background:var(--ink);color:var(--paper);}

@@ -33,9 +33,35 @@
     if (e.target === unavailableModal) closeUnavailable();
   });
 
+  // Modale "avertissement épilepsie"
+  const epilepsyModal = document.getElementById('epilepsyModal');
+  const epilepsyClose = document.getElementById('epilepsyClose');
+  const epilepsyCancel = document.getElementById('epilepsyCancel');
+  const epilepsyContinue = document.getElementById('epilepsyContinue');
+
+  function openEpilepsy(e){
+    e.preventDefault();
+    epilepsyContinue.setAttribute('href', e.currentTarget.dataset.epilepsyUrl);
+    epilepsyModal.classList.add('open');
+  }
+  function closeEpilepsy(){
+    epilepsyModal.classList.remove('open');
+  }
+
+  document.querySelectorAll('[data-epilepsy-url]').forEach(link => {
+    link.addEventListener('click', openEpilepsy);
+  });
+  epilepsyClose.addEventListener('click', closeEpilepsy);
+  epilepsyCancel.addEventListener('click', closeEpilepsy);
+  epilepsyContinue.addEventListener('click', closeEpilepsy);
+  epilepsyModal.addEventListener('click', (e) => {
+    if (e.target === epilepsyModal) closeEpilepsy();
+  });
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape'){
       closeOverlay();
       closeUnavailable();
+      closeEpilepsy();
     }
   });
