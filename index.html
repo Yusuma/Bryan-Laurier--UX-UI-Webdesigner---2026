@@ -2,21 +2,23 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-<title>Bryan Laurier</title>
-<meta name="description" content="Bryan Laurier — UI/UX Web Designer, graphiste, beatmaker.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Bryan Laurier | UI/UX Web Designer, graphiste, beatmaker</title>
+<meta name="description" content="Portfolio de Bryan Laurier, UI/UX Web Designer, graphiste et beatmaker. Travaux, parcours et contact."><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:title" content="Bryan Laurier | UI/UX Web Designer"><meta property="og:description" content="Portfolio de Bryan Laurier, UI/UX Web Designer, graphiste et beatmaker."><meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="@CSS/style.css">
 <link rel="icon" href="https://i.imgur.com/6vv1D1i.png">
 </head>
 <body>
 
-<div class="corner-nav">
+<header class="corner-nav">
   <div class="brand">Bryan Laurier</div>
-  <button class="info-btn" id="infoOpen">Info</button>
-</div>
+  <nav class="nav-right"><a class="info-btn" href="mailto:laurierbryan77340@gmail.com">Contact</a><button class="info-btn" id="infoOpen" aria-expanded="false" aria-controls="overlay">Info</button></nav>
+</header>
+<main>
+<h1 class="sr-only">Bryan Laurier, UI/UX Web Designer, graphiste et beatmaker</h1>
 
 <div class="wall" aria-hidden="true">
   <div class="row left"><div class="row-track">
@@ -36,22 +38,24 @@
   </div></div>
 </div>
 
-<p class="scroll-hint">Cliquez sur INFO ↑</p>
+<div class="bottom-bar"><p class="scroll-hint">Travaux et contact dans Info</p><button class="pause-btn" id="pauseBtn" aria-pressed="false">Pause</button></div>
+</main>
 
-<div class="overlay" id="overlay">
-  <button class="close-btn" id="infoClose" aria-label="Fermer">X</button>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Informations">
+  <button class="close-btn" id="infoClose" data-close aria-label="Fermer">X</button>
   <div class="overlay-inner">
 
     <div class="ov-block">
       <h2>Bio</h2>
-      <p>Je suis étudiant en UI/UX Web Design, toujours à la recherche de nouvelles expériences et de nouveaux projets. La majorité de mes compétences et de mes connaissances viennent de projets personnels ; j'aime apprendre de nouvelles choses et je travaille bien en équipe. Je suis motivé, créatif et attentif aux détails. Je suis aussi perfectionniste et j'aime acquérir de nouvelles compétences et relever de nouveaux défis</p>
-      <p>Motivé, créatif, attentif. Perfectionniste assumé : je préfère refaire une maquette trois fois plutôt que livrer un compromis.</p>
+      <p>UI/UX web designer, graphiste et beatmaker. Mes compétences viennent surtout de projets personnels, du site vitrine au serveur de jeu, et j'ai fondé Mermaid Lab Crew en 2022 pour la production musicale.</p>
+      <p>J'apprends vite et je travaille bien en équipe. Perfectionniste assumé, je préfère refaire une maquette trois fois plutôt que livrer un compromis.</p>
       <div class="skills-row">
         <span>HTML5</span><span>CSS3</span><span>Figma</span><span>JavaScript</span>
         <span>Wordpress</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span>
         <span>Filmora</span><span>FL Studio</span><span>Reaper</span><span>Notion</span>
-        <span>Github</span><span>English : Courant</span><span>Français : Natif</span>
+        <span>Github</span>
       </div>
+      <p class="langs">Langues : français natif, anglais courant.</p>
       <div class="cta-row">
         <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="filled">Télécharger CV</a>
         <a href="portfolio.pdf" target="_blank" rel="noopener noreferrer">Télécharger portfolio</a>
@@ -62,17 +66,17 @@
       <h2>Formations</h2>
       <div class="work-list">
         <div class="work-item">
-          <h3>Titre professionnel niveau 2 – UI/UX Web Designer – Alt-RH</h3>
+          <h3>Titre professionnel niveau 2, UI/UX Web Designer, Alt-RH</h3>
           <span class="desc">Titre professionnel de webdesigner, graphiste, montage vidéo, illustration, SEO</span>
           <span class="status">2021 - 2022</span>
         </div>
         <div class="work-item">
-          <h3>Baccalauréat sciences économiques et sociales – Lycée Camille-Claudel</h3>
-          <span class="desc">Baccalauréat SES – Option : maths</span>
+          <h3>Baccalauréat sciences économiques et sociales, Lycée Camille-Claudel</h3>
+          <span class="desc">Baccalauréat SES, Option : maths</span>
           <span class="status">2014 - 2015</span>
         </div>
         <div class="work-item">
-          <h3>Terminale sciences de l'ingénieur – Lycée Camille-Claudel</h3>
+          <h3>Terminale sciences de l'ingénieur, Lycée Camille-Claudel</h3>
           <span class="desc">Option : Sciences du numérique</span>
           <span class="status">2013 - 2014</span>
         </div>
@@ -107,65 +111,28 @@
 
     <div class="ov-block">
       <h2>Travaux</h2>
-      <div class="work-list">
-        <div class="work-item">
-          <h3>LCHS SUD 41</h3>
-          <span class="desc">Refonte association contre le harcèlement scolaire</span>
-          <span class="status">Livré · 2023</span>
-          <a class="go unavailable" href="#" data-unavailable>Indisponible</a>
-        </div>
-        <div class="work-item">
-          <h3>ToutaElle.com</h3>
-          <span class="desc">E-commerce mode féminine</span>
-          <span class="status">Livré · 2023</span>
-          <a class="go unavailable" href="#" data-unavailable>Indisponible</a>
-        </div>
-        <div class="work-item">
-          <h3>Awaplaisir</h3>
-          <span class="desc">Site vitrine mobilier</span>
-          <span class="status">2022</span>
-          <a class="go unavailable" href="#" data-unavailable>Indisponible</a>
-        </div>
-        <div class="work-item">
-          <h3>Cwideo</h3>
-          <span class="desc">Aide à la rédaction de CV</span>
-          <span class="status">Livré · 2021</span>
-          <a class="go" href="https://www.figma.com/file/K5lV1OJ2L4t0lxM2KHjqSn/CWIDEO" target="_blank" rel="noopener noreferrer">Figma →</a>
-        </div>
-        <div class="work-item">
-          <h3>digit. Back Office</h3>
-          <span class="desc">Solution back-office communautaire</span>
-          <span class="status">Abandonné · 202</span>
-          <a class="go" href="https://yusuma.github.io/digit.-Back-Office--ABANDONNED-/" target="_blank" rel="noopener noreferrer">Testé →</a>
-        </div>
-       <div class="work-item">
-          <h3>Hoshikaze 2250</h3>
-          <span class="desc">Site web pour un jeux de rôle </span>
-          <span class="status">2022 · 2026</span>
-          <a class="go epilepsy-warning" href="#" data-epilepsy-url="https://yusuma.github.io/DEMO-HoshiKaze2250-PROTOTYPE/">Testé →</a>
-        </div>
-        <div class="work-item">
-          <h3>L.A. Galaxy RP Official</h3>
-          <span class="desc">Site web, serveur de jeux vidéo + DA complète</span>
-          <span class="status">Abandonné · 2021</span>
-          <a class="go" href="https://dazzling-hopper-d7e259.netlify.app" target="_blank" rel="noopener noreferrer">Voir →</a>
-        </div>
-          <div class="work-item">
-          <a class="go" href="https://www.behance.net/bryanlaurierdesign" target="_blank" rel="noopener noreferrer">Behance pour plus de projets →</a>
-        </div>
-      </div>
+      <ul class="gallery">
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">LCHS SUD 41</span><img src="@RESSOURCES/travaux/lchs-sud-41.webp" alt="Aperçu du projet LCHS SUD 41" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>LCHS SUD 41</h3><p class="desc">Refonte association contre le harcèlement scolaire</p><span class="status">Livré · 2023</span><button class="go" type="button" data-unavailable>Indisponible</button></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">ToutaElle.com</span><img src="@RESSOURCES/travaux/toutaelle.webp" alt="Aperçu du projet ToutaElle.com" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>ToutaElle.com</h3><p class="desc">E-commerce mode féminine</p><span class="status">Livré · 2023</span><button class="go" type="button" data-unavailable>Indisponible</button></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">Awaplaisir</span><img src="@RESSOURCES/travaux/awaplaisir.webp" alt="Aperçu du projet Awaplaisir" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>Awaplaisir</h3><p class="desc">Site vitrine mobilier</p><span class="status">2022</span><button class="go" type="button" data-unavailable>Indisponible</button></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">Cwideo</span><img src="@RESSOURCES/travaux/cwideo.webp" alt="Aperçu du projet Cwideo" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>Cwideo</h3><p class="desc">Aide à la rédaction de CV</p><span class="status">Livré · 2021</span><a class="go" href="https://www.figma.com/file/K5lV1OJ2L4t0lxM2KHjqSn/CWIDEO" target="_blank" rel="noopener noreferrer">Voir la maquette Figma</a></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">digit. Back Office</span><img src="@RESSOURCES/travaux/digit-back-office.webp" alt="Aperçu du projet digit. Back Office" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>digit. Back Office</h3><p class="desc">Solution back-office communautaire</p><span class="status">Abandonné</span><a class="go" href="https://yusuma.github.io/digit.-Back-Office--ABANDONNED-/" target="_blank" rel="noopener noreferrer">Tester le prototype</a></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">Hoshikaze 2250</span><img src="@RESSOURCES/travaux/hoshikaze-2250.webp" alt="Aperçu du projet Hoshikaze 2250" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>Hoshikaze 2250</h3><p class="desc">Site web pour un jeu de rôle</p><span class="status">2022 à 2026</span><button class="go" type="button" data-epilepsy-url="https://yusuma.github.io/DEMO-HoshiKaze2250-PROTOTYPE/">Tester la démo</button></div></li>
+<li class="card"><div class="card-visual"><span class="card-fallback" aria-hidden="true">L.A. Galaxy RP Official</span><img src="@RESSOURCES/travaux/la-galaxy-rp.webp" alt="Aperçu du projet L.A. Galaxy RP Official" width="1200" height="900" loading="lazy" onerror="this.hidden=true"></div><div class="card-info"><h3>L.A. Galaxy RP Official</h3><p class="desc">Site web, serveur de jeux vidéo et direction artistique complète</p><span class="status">Abandonné · 2021</span><a class="go" href="https://dazzling-hopper-d7e259.netlify.app" target="_blank" rel="noopener noreferrer">Voir le site</a></div></li>
+</ul>
+      <a class="behance-more" href="https://www.behance.net/bryanlaurierdesign" target="_blank" rel="noopener noreferrer">Plus de projets sur Behance</a>
     </div>
 
-    <div class="ov-block">
+    <div class="ov-block" id="contact">
       <h2>Contact</h2>
       <div class="contact-row">
         <a href="mailto:laurierbryan77340@gmail.com">laurierbryan77340@gmail.com</a>
         <span>+33 6 03 75 13 43</span>
         <div class="socials">
-          <a href="https://www.instagram.com/laurierbryan/" target="_blank" rel="noopener noreferrer">IG</a>
-          <a href="https://www.youtube.com/channel/UCAXXTwDyHZvUeDOBMpdrp1Q" target="_blank" rel="noopener noreferrer">YT</a>
-          <a href="https://www.behance.net/bryanlaurierdesign" target="_blank" rel="noopener noreferrer">BH</a>
-          <a href="https://github.com/Yusuma" target="_blank" rel="noopener noreferrer">GH</a>
+          <a href="https://www.instagram.com/laurierbryan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://www.youtube.com/channel/UCAXXTwDyHZvUeDOBMpdrp1Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+          <a href="https://www.behance.net/bryanlaurierdesign" target="_blank" rel="noopener noreferrer" aria-label="Behance">BH</a>
+          <a href="https://github.com/Yusuma" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
         </div>
       </div>
     </div>
@@ -175,7 +142,7 @@
 
 <div class="modal-backdrop" id="unavailableModal">
   <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="unavailableTitle">
-    <button class="modal-close" id="unavailableClose" aria-label="Fermer">X</button>
+    <button class="modal-close" id="unavailableClose" data-close aria-label="Fermer">X</button>
     <h3 id="unavailableTitle">Projet indisponible</h3>
     <p>Ce projet n'est plus disponible ou a été modifié depuis. N'hésitez pas à consulter mon profil Behance, il y a peut-être des captures d'écran de ce projet.</p>
     <a class="behance-link" href="https://www.behance.net/bryanlaurierdesign" target="_blank" rel="noopener noreferrer">Voir mon Behance →</a>
@@ -184,7 +151,7 @@
 
 <div class="modal-backdrop" id="epilepsyModal">
   <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="epilepsyTitle">
-    <button class="modal-close" id="epilepsyClose" aria-label="Fermer">X</button>
+    <button class="modal-close" id="epilepsyClose" data-close aria-label="Fermer">X</button>
     <h3 id="epilepsyTitle">⚠ Avertissement</h3>
     <p>Ce site contient des transitions avec des flashs lumineux intenses, pouvant potentiellement déclencher des crises chez les personnes photosensibles ou épileptiques. Consultez-le avec prudence.</p>
     <div class="modal-actions">
