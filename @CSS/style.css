@@ -76,7 +76,7 @@
   }
   .row-track span{margin-right:0.45em;}
   .group{display:inline-block;}
-  .wall.paused .row-track{animation-play-state:paused;}
+  .wall.paused .row .row-track{animation-play-state:paused;}
   .nav-right{display:flex;gap:18px;align-items:center;}
   .bottom-bar{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 26px 10px;z-index:250;mix-blend-mode:difference;color:#fff;}
   .pause-btn{font-family:'Archivo',sans-serif;font-weight:700;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;min-height:44px;padding:0 4px;}
@@ -271,3 +271,14 @@
   .card:hover .desc{color:var(--paper);}
   .behance-more{display:inline-flex;align-items:center;min-height:44px;margin-top:20px;font-family:'Archivo',sans-serif;font-weight:700;text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;}
   img[hidden]{display:none;}
+  .legal-link{margin-top:10px;font-size:0.85rem;}
+  .legal-link a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px;}
+  .legal{max-width:760px;margin:0 auto;padding:100px 26px 60px;}
+  .legal h1{font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(1.8rem,6vw,3rem);margin-bottom:12px;}
+  .legal h2{font-family:'Archivo',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.1rem;margin:32px 0 8px;}
+  .legal p{max-width:62ch;margin-bottom:10px;}
+  .legal a{text-decoration:underline;text-underline-offset:3px;}
+  .nf{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:26px;max-width:760px;margin:0 auto;}
+  .nf h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(4rem,22vw,10rem);line-height:1;}
+  .nf p{margin:12px 0 24px;font-size:1.1rem;}
+  .nf a{align-self:flex-start;font-family:'Archivo',sans-serif;font-weight:700;text-transform:uppercase;border:2px solid var(--ink);padding:13px 22px;min-height:44px;}
