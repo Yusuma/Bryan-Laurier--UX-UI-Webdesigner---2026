@@ -196,6 +196,22 @@
         "label": "Indisponible"
       },
       "alt": "Aperçu du projet Awaplaisir"
+    },
+    {
+      "slug": "qb-script-wiki",
+      "title": "QB Script",
+      "desc": "QB Script est un framework FiveM qui permet de créer un serveur RolePlay. Il existe donc des scripts développés par les créateurs du framework, mais également des scripts conçus par les développeurs et les utilisateurs eux-mêmes. Afin de permettre à chacun de comprendre leur fonctionnement, nous avons décidé de créer un site de type Wiki pour partager nos connaissances sur ces différents scripts.",
+      "status": "Prototype · 2021",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://www.figma.com/file/T6RwOHaOK3ZihP1OYe9l9p/QB-Wiki?type=design&node-id=0%3A1&mode=design&t=TSRbS6ihK5ZkswWo-1",
+        "label": "Indisponible"
+      },
+      "alt": "Aperçu du projet"
     }
   ],
   "behance": "https://www.behance.net/bryanlaurierdesign",
