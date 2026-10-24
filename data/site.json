@@ -228,6 +228,22 @@
         "label": "Voir la maquette Figma"
       },
       "alt": "Aperçu du projet"
+    },
+    {
+      "slug": "sharly-app",
+      "title": "Sharly App",
+      "desc": "Sharly est une application mobile prototype réalisée dans le cadre de ma formation en UI/UX et webdesign. Nous avons conçu ce prototype sur Figma afin de répondre aux besoins d’information des étudiants et de les aider à mieux s’organiser dans leur vie quotidienne. Nous avons travaillé en équipe de cinq personnes sur ce projet.",
+      "status": "Prototype · 2021",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://www.figma.com/file/q21MC2QRV35qYOklPKxujQ/Sharly-Proto-Team?type=design&node-id=0%3A1&mode=design&t=sRV8wmXWcCs9Cpte-1",
+        "label": "Voir la maquette Figma"
+      },
+      "alt": "Aperçu du projet"
     }
   ],
   "behance": "https://www.behance.net/bryanlaurierdesign",
