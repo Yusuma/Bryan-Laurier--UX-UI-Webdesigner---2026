@@ -200,7 +200,7 @@
     {
       "slug": "qb-script-wiki",
       "title": "QB Script",
-      "desc": "QB Script est un framework FiveM qui permet de créer un serveur RolePlay. Il existe donc des scripts développés par les créateurs du framework, mais également des scripts conçus par les développeurs et les utilisateurs eux-mêmes. Afin de permettre à chacun de comprendre leur fonctionnement, nous avons décidé de créer un site de type Wiki pour partager nos connaissances sur ces différents scripts.",
+      "desc": "QB Script est un framework FiveM qui permet de créer un serveur RolePlay avec des scripts développés, par les créateurs du framework, mais également des scripts conçus par les développeurs et les utilisateurs eux-mêmes. Afin de permettre à chacun de comprendre leur fonctionnement, nous avons décidé de créer un site de type Wiki pour partager nos connaissances sur ces différents scripts.",
       "status": "Prototype · 2021",
       "devices": [
         "desktop",
