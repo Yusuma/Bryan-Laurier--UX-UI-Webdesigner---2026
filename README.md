@@ -37,6 +37,10 @@ portfolio.pdf          à ajouter
 
 Déposer dans `@RESSOURCES/travaux/` une image WebP de 1200 x 900 px, moins de 150 Ko, nommée comme le projet : `lchs-sud-41.webp`, `toutaelle.webp`, `awaplaisir.webp`, `cwideo.webp`, `digit-back-office.webp`, `hoshikaze-2250.webp`, `la-galaxy-rp.webp`. Sans image, la carte affiche le nom du projet sur fond noir. Adapter ensuite le texte alternatif dans `index.html`.
 
+## Icônes de compatibilité
+
+Sur chaque tuile `<li class="card">` de `index.html`, ajouter `data-devices="desktop mobile"` (ou `desktop`, ou `mobile`) pour afficher les icônes écran et téléphone à côté du titre. Sans l'attribut, aucune icône.
+
 ## Utilisation Utilisation
 
 Aucune installation nécessaire : c'est un site statique.
@@ -46,9 +50,11 @@ Aucune installation nécessaire : c'est un site statique.
 
 ## Screenshot
 
-<img width="1878" height="923" alt="Capture d'écran du portfolio (1)" src="https://github.com/user-attachments/assets/e210e664-10ec-46c8-959f-4b38f3e27107" />
+<img width="1878" height="923" alt="Page d'accueil : mur de texte défilant en brun chocolat et crème, avec Contact et Info en haut" src="@RESSOURCES/screenshots/accueil.webp" />
 
-<img width="1878" height="923" alt="Capture d'écran du portfolio (2)" src="https://github.com/user-attachments/assets/06037d53-0f57-4e29-b784-d5c366795c38" />
+<img width="1878" height="923" alt="Panneau Info en thème clair : bio, compétences et boutons de téléchargement" src="@RESSOURCES/screenshots/panneau-info.webp" />
+
+<img width="1440" height="800" alt="Section Travaux : galerie de tuiles de projets" src="@RESSOURCES/screenshots/travaux.webp" />
 
 ## Contact
 

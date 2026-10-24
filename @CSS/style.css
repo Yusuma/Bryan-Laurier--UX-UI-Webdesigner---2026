@@ -291,3 +291,5 @@
   .card:nth-child(even) .card-fallback{color:#FFF8F0;}
   .overlay,.modal-backdrop,.light{--ink:#4B2E2B;--paper:#FFF8F0;color:var(--ink);}
   .work-item .desc,.card-info .desc{color:var(--nut);}
+  .card-info h3{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .devices{display:inline-flex;gap:8px;flex-shrink:0;}
