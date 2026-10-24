@@ -209,7 +209,23 @@
       "action": {
         "type": "link",
         "url": "https://www.figma.com/file/T6RwOHaOK3ZihP1OYe9l9p/QB-Wiki?type=design&node-id=0%3A1&mode=design&t=TSRbS6ihK5ZkswWo-1",
-        "label": "Indisponible"
+        "label": "Voir la maquette Figma"
+      },
+      "alt": "Aperçu du projet"
+    },
+    {
+      "slug": "digit-website",
+      "title": "Digit. Website",
+      "desc": "Voici la structure du site web du groupe Digit. Notre objectif est de proposer des services dans le domaine du multimédia, et plus particulièrement dans la création de sites web.",
+      "status": "Prototype · 2022",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://www.figma.com/file/7lAuH4MbA9FyDewZjBKyBA/digitize-website?type=design&node-id=0%3A1&mode=design&t=LYgglbMEnYz4WMGh-1",
+        "label": "Voir la maquette Figma"
       },
       "alt": "Aperçu du projet"
     }
