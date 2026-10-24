@@ -154,7 +154,10 @@
       "title": "LCHS SUD 41",
       "desc": "Refonte association contre le harcèlement scolaire",
       "status": "Livré · 2023",
-      "devices": [],
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
       "action": {
         "type": "unavailable",
         "url": "",
@@ -167,7 +170,10 @@
       "title": "ToutaElle.com",
       "desc": "E-commerce mode féminine",
       "status": "Livré · 2023",
-      "devices": [],
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
       "action": {
         "type": "unavailable",
         "url": "",
@@ -180,7 +186,10 @@
       "title": "Awaplaisir",
       "desc": "Site vitrine mobilier",
       "status": "2022",
-      "devices": [],
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
       "action": {
         "type": "unavailable",
         "url": "",
