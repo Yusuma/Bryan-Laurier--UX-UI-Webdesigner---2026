@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; connect-src https://api.github.com; frame-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Back office | Bryan Laurier</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="top"><strong>Back office</strong><span id="who"></span><button id="logout" hidden type="button">Se déconnecter</button></header>
+
+<section id="login" class="panel">
+  <h1>Connexion</h1>
+  <p>Collez un jeton GitHub limité à ce seul dépôt, avec la permission « Contents : lecture et écriture ». Il reste dans cet onglet et disparaît à sa fermeture.</p>
+  <label>Compte GitHub <input id="owner" value="Yusuma" autocomplete="off"></label>
+  <label>Dépôt <input id="repo" value="Bryan-Laurier--UX-UI-Webdesigner---2026" autocomplete="off"></label>
+  <label>Branche <input id="branch" value="main" autocomplete="off"></label>
+  <label>Jeton <input id="token" type="password" autocomplete="off"></label>
+  <button id="connect" type="button" class="primary">Se connecter</button>
+  <p id="loginMsg" role="status"></p>
+</section>
+
+<div id="app" hidden>
+  <nav id="tabs" aria-label="Sections"></nav>
+  <main id="form"></main>
+  <aside id="preview">
+    <div class="pv-bar"><button id="pvInfo" type="button">Ouvrir Info dans l'aperçu</button><button id="pvReload" type="button">Recharger</button></div>
+    <iframe id="frame" title="Aperçu du site" src="../"></iframe>
+  </aside>
+  <footer class="savebar"><span id="status" role="status"></span><button id="save" type="button" class="primary">Enregistrer et publier</button></footer>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

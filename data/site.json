@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "Bryan Laurier | UI/UX Web Designer, graphiste, beatmaker",
+    "description": "Portfolio de Bryan Laurier, UI/UX Web Designer, graphiste et beatmaker. Travaux, parcours et contact.",
+    "jobTitle": "UI/UX Web Designer"
+  },
+  "colors": {
+    "dark": "#4B2E2B",
+    "light": "#FFF8F0",
+    "mid": "#8C5A3C",
+    "accent": "#C08552"
+  },
+  "hero": {
+    "h1": "Bryan Laurier, UI/UX Web Designer, graphiste et beatmaker",
+    "rows": [
+      "BRYAN LAURIER",
+      "UI/UX WEBDESIGNER",
+      "GRAPHISTE",
+      "BEATMAKER",
+      "PORTFOLIO 2026"
+    ],
+    "hint": "Travaux et contact dans Info"
+  },
+  "bio": {
+    "paragraphs": [
+      "UI/UX web designer, graphiste et beatmaker. Mes compétences viennent surtout de projets personnels, du site vitrine au serveur de jeu, et j'ai fondé Mermaid Lab Crew en 2022 pour la production musicale.",
+      "J'apprends vite et je travaille bien en équipe. Perfectionniste assumé, je préfère refaire une maquette trois fois plutôt que livrer un compromis."
+    ],
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Figma",
+      "JavaScript",
+      "Wordpress",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator",
+      "Filmora",
+      "FL Studio",
+      "Reaper",
+      "Notion",
+      "Github"
+    ],
+    "languages": "Langues : français natif, anglais courant.",
+    "cv": "cv.pdf",
+    "portfolio": "portfolio.pdf"
+  },
+  "formations": [
+    {
+      "title": "Titre professionnel niveau 2, UI/UX Web Designer, Alt-RH",
+      "desc": "Titre professionnel de webdesigner, graphiste, montage vidéo, illustration, SEO",
+      "dates": "2021 - 2022"
+    },
+    {
+      "title": "Baccalauréat sciences économiques et sociales, Lycée Camille-Claudel",
+      "desc": "Baccalauréat SES, Option : maths",
+      "dates": "2014 - 2015"
+    },
+    {
+      "title": "Terminale sciences de l'ingénieur, Lycée Camille-Claudel",
+      "desc": "Option : Sciences du numérique",
+      "dates": "2013 - 2014"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Fondateur - Mermaid Lab Crew",
+      "desc": "Auto-entreprise, production musicale, directeur artistique, développement d'artistes, développement de plug-ins pour DAW.",
+      "dates": "2022 - Aujourd'hui"
+    },
+    {
+      "title": "Co-Fondateur - Digit.",
+      "desc": "Création d'une agence web axée sur les besoins audiovisuels du Web.",
+      "dates": "2022 - Janvier 2023"
+    },
+    {
+      "title": "Chargé de communication - Fondation INFA",
+      "desc": "Réalisation de contenus et gestion de la communication, dont interviews et flyers.",
+      "dates": "Juin - Juillet 2017"
+    },
+    {
+      "title": "Chargé de communication - CFP des Moulins (Terrebonne, Canada)",
+      "desc": "Réalisation d'une vidéo de promotion de l'établissement, analyse SEO du site web de l'établissement, réalisation de contenus de communication dont flyers et visuels",
+      "dates": "Mars - Juin 2017"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "cwideo",
+      "title": "Cwideo",
+      "desc": "Aide à la rédaction de CV",
+      "status": "Livré · 2021",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://www.figma.com/file/K5lV1OJ2L4t0lxM2KHjqSn/CWIDEO",
+        "label": "Voir la maquette Figma"
+      },
+      "alt": "Aperçu du projet Cwideo"
+    },
+    {
+      "slug": "digit-back-office",
+      "title": "digit. Back Office",
+      "desc": "Solution back-office communautaire",
+      "status": "Abandonné · 2022",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://yusuma.github.io/digit.-Back-Office--ABANDONNED-/",
+        "label": "Tester le prototype"
+      },
+      "alt": "Aperçu du projet digit. Back Office"
+    },
+    {
+      "slug": "hoshikaze-2250",
+      "title": "Hoshikaze 2250",
+      "desc": "Site web pour un jeu de rôle",
+      "status": "2022 à 2026",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "epilepsy",
+        "url": "https://yusuma.github.io/DEMO-HoshiKaze2250-PROTOTYPE/",
+        "label": "Tester la démo"
+      },
+      "alt": "Aperçu du projet Hoshikaze 2250"
+    },
+    {
+      "slug": "la-galaxy-rp",
+      "title": "L.A. Galaxy RP Official",
+      "desc": "Site web, serveur de jeux vidéo et direction artistique complète",
+      "status": "Abandonné · 2021",
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://dazzling-hopper-d7e259.netlify.app",
+        "label": "Voir le site"
+      },
+      "alt": "Aperçu du projet L.A. Galaxy RP Official"
+    },
+    {
+      "slug": "lchs-sud-41",
+      "title": "LCHS SUD 41",
+      "desc": "Refonte association contre le harcèlement scolaire",
+      "status": "Livré · 2023",
+      "devices": [],
+      "action": {
+        "type": "unavailable",
+        "url": "",
+        "label": "Indisponible"
+      },
+      "alt": "Aperçu du projet LCHS SUD 41"
+    },
+    {
+      "slug": "toutaelle",
+      "title": "ToutaElle.com",
+      "desc": "E-commerce mode féminine",
+      "status": "Livré · 2023",
+      "devices": [],
+      "action": {
+        "type": "unavailable",
+        "url": "",
+        "label": "Indisponible"
+      },
+      "alt": "Aperçu du projet ToutaElle.com"
+    },
+    {
+      "slug": "awaplaisir",
+      "title": "Awaplaisir",
+      "desc": "Site vitrine mobilier",
+      "status": "2022",
+      "devices": [],
+      "action": {
+        "type": "unavailable",
+        "url": "",
+        "label": "Indisponible"
+      },
+      "alt": "Aperçu du projet Awaplaisir"
+    }
+  ],
+  "behance": "https://www.behance.net/bryanlaurierdesign",
+  "contact": {
+    "email_user": "laurierbryan77340",
+    "email_domain": "gmail.com",
+    "phone_a": "+33 6 03",
+    "phone_b": "75 13 43"
+  },
+  "socials": [
+    {
+      "label": "IG",
+      "name": "Instagram",
+      "url": "https://www.instagram.com/laurierbryan/"
+    },
+    {
+      "label": "YT",
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UCAXXTwDyHZvUeDOBMpdrp1Q"
+    },
+    {
+      "label": "BH",
+      "name": "Behance",
+      "url": "https://www.behance.net/bryanlaurierdesign"
+    },
+    {
+      "label": "GH",
+      "name": "GitHub",
+      "url": "https://github.com/Yusuma"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{{HEAD}}
+<body>
+
+<header class="corner-nav">
+  <div class="brand">Bryan Laurier</div>
+  <nav class="nav-right">{{NAVMAIL}}<button class="info-btn" id="infoOpen" aria-expanded="false" aria-controls="overlay">Info</button></nav>
+</header>
+<main>
+{{H1}}
+
+<div class="wall" aria-hidden="true">
+{{ROWS}}</div>
+
+<div class="bottom-bar"><p class="scroll-hint">{{HINT}}</p><button class="pause-btn" id="pauseBtn" aria-pressed="false">Pause</button></div>
+</main>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Informations">
+  <button class="close-btn" id="infoClose" data-close aria-label="Fermer">X</button>
+  <div class="overlay-inner">
+
+    <div class="ov-block">
+      <h2>Bio</h2>
+{{BIO}}
+    </div>
+
+    <div class="ov-block">
+      <h2>Formations</h2>
+{{FORMATIONS}}
+    </div>
+    <div class="ov-block">
+      <h2>Expériences</h2>
+{{EXPERIENCES}}
+
+    </div>
+
+    <div class="ov-block">
+      <h2>Travaux</h2>
+{{GALLERY}}
+    </div>
+
+    <div class="ov-block" id="contact">
+      <h2>Contact</h2>
+{{CONTACT}}
+    </div>
+
+    <p class="legal-link"><a href="mentions-legales.html">Mentions légales</a></p>
+
+  </div>
+</div>
+
+<div class="modal-backdrop" id="unavailableModal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="unavailableTitle">
+    <button class="modal-close" id="unavailableClose" data-close aria-label="Fermer">X</button>
+    <h3 id="unavailableTitle">Projet indisponible</h3>
+    <p>Ce projet n'est plus disponible ou a été modifié depuis. N'hésitez pas à consulter mon profil Behance, il y a peut-être des captures d'écran de ce projet.</p>
+    <a class="behance-link" href="{{BEHANCE}}" target="_blank" rel="noopener noreferrer">Voir mon Behance →</a>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="epilepsyModal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="epilepsyTitle">
+    <button class="modal-close" id="epilepsyClose" data-close aria-label="Fermer">X</button>
+    <h3 id="epilepsyTitle">⚠ Avertissement</h3>
+    <p>Ce site contient des transitions avec des flashs lumineux intenses, pouvant potentiellement déclencher des crises chez les personnes photosensibles ou épileptiques. Consultez-le avec prudence.</p>
+    <div class="modal-actions">
+      <a class="behance-link" id="epilepsyContinue" href="#" target="_blank" rel="noopener noreferrer">Continuer vers le site →</a>
+      <button class="modal-cancel" id="epilepsyCancel" type="button">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<script src="@JS/contact.js"></script>
+<script src="@JS/script.js"></script>
+
+</body>
+</html>

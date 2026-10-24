@@ -1,8 +1,8 @@
   :root{
-    --ink:#FFF8F0;
-    --nut:#8C5A3C;
-    --caramel:#C08552;
-    --paper:#4B2E2B;
+    --ink:var(--c-light);
+    --nut:var(--c-mid);
+    --caramel:var(--c-accent);
+    --paper:var(--c-dark);
       }
   *{margin:0;padding:0;box-sizing:border-box;}
   html,body{height:100%;}
@@ -185,7 +185,7 @@
   .modal-backdrop{
     position:fixed;
     inset:0;
-    background:rgba(75,46,43,0.7);
+    background:color-mix(in srgb,var(--c-dark) 70%,transparent);
     z-index:500;
     display:flex;
     align-items:center;
@@ -265,7 +265,7 @@
   .card{position:relative;border:2px solid var(--ink);display:flex;flex-direction:column;background:var(--paper);}
   .card-visual{position:relative;aspect-ratio:4/3;background:var(--caramel);overflow:hidden;display:flex;align-items:center;justify-content:center;}
   .card-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .card-fallback{color:#4B2E2B;font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,5vw,2.4rem);line-height:1;padding:16px;text-align:center;}
+  .card-fallback{color:var(--c-dark);font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,5vw,2.4rem);line-height:1;padding:16px;text-align:center;}
   .card-info{display:flex;flex-direction:column;gap:6px;padding:16px;border-top:2px solid var(--ink);flex:1;}
   .card-info h3{font-family:'Archivo',sans-serif;font-weight:700;font-size:1.05rem;text-transform:uppercase;}
   .card-info .desc{font-size:0.88rem;color:var(--ink);}
@@ -288,8 +288,8 @@
   .nf p{margin:12px 0 24px;font-size:1.1rem;}
   .nf a{align-self:flex-start;font-family:'Archivo',sans-serif;font-weight:700;text-transform:uppercase;border:2px solid var(--ink);padding:13px 22px;min-height:44px;}
   .card:nth-child(even) .card-visual{background:var(--nut);}
-  .card:nth-child(even) .card-fallback{color:#FFF8F0;}
-  .overlay,.modal-backdrop,.light{--ink:#4B2E2B;--paper:#FFF8F0;color:var(--ink);}
+  .card:nth-child(even) .card-fallback{color:var(--c-light);}
+  .overlay,.modal-backdrop,.light{--ink:var(--c-dark);--paper:var(--c-light);color:var(--ink);}
   .work-item .desc,.card-info .desc{color:var(--nut);}
   .card-info h3{display:flex;align-items:center;justify-content:space-between;gap:10px;}
   .devices{display:inline-flex;gap:8px;flex-shrink:0;}

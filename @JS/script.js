@@ -7,13 +7,13 @@ const stack=[],themeMeta=document.getElementById('themeColor');
 function openLayer(el,trigger){
   el.inert=false;el.classList.add('open');
   stack.push({el,trigger});
-  if(el===overlay){document.body.style.overflow='hidden';infoBtn.setAttribute('aria-expanded','true');themeMeta.content='#FFF8F0';}
+  if(el===overlay){document.body.style.overflow='hidden';infoBtn.setAttribute('aria-expanded','true');themeMeta.content=themeMeta.dataset.light;}
   el.querySelector('[data-close]').focus();
 }
 function closeLayer(){
   const top=stack.pop();if(!top)return;
   top.el.classList.remove('open');top.el.inert=true;
-  if(top.el===overlay){document.body.style.overflow='';infoBtn.setAttribute('aria-expanded','false');themeMeta.content='#4B2E2B';}
+  if(top.el===overlay){document.body.style.overflow='';infoBtn.setAttribute('aria-expanded','false');themeMeta.content=themeMeta.dataset.dark;}
   if(top.trigger)top.trigger.focus();
 }
 infoBtn.addEventListener('click',()=>openLayer(overlay,infoBtn));

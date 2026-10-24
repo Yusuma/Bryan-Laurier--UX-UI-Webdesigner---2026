@@ -21,7 +21,10 @@ Design inspiré de [monomono.studio](https://monomono.studio) : mur de texte ple
 ## Structure du projet
 
 ```
-index.html
+template/index.html     gabarit de la page d'accueil
+data/site.json         contenus modifiables
+tools/build.py         génère le site
+admin/                 back office
 mentions-legales.html
 404.html
 sitemap.xml, robots.txt
@@ -32,6 +35,21 @@ sitemap.xml, robots.txt
 cv.pdf                 à ajouter
 portfolio.pdf          à ajouter
 ```
+
+## Back office
+
+Les contenus (textes, couleurs, projets, liens) vivent dans `data/site.json`. Le fichier `template/index.html` est le gabarit de la page, et `tools/build.py` génère le site (dossier `_site`) à chaque envoi sur la branche `main`. Le build vérifie toutes les valeurs : une couleur ou une adresse invalide fait échouer la publication et l'ancienne version reste en ligne.
+
+Le back office se trouve dans `/admin/`. Il modifie `data/site.json` et dépose les visuels de projets (recadrés en 1200 x 900, convertis en WebP) via l'API GitHub.
+
+Mise en place, une seule fois :
+
+1. Dans le dépôt : Settings, Pages, Source : **GitHub Actions**.
+2. Supprimer l'ancien `index.html` à la racine (il est remplacé par `template/index.html`).
+3. Créer un jeton : GitHub, Settings, Developer settings, Fine-grained tokens, limité à ce seul dépôt, permission **Contents : Read and write**.
+4. Ouvrir `/admin/`, coller le jeton, modifier, puis Enregistrer et publier. Le site se met à jour en une à deux minutes. En cas d'échec, l'onglet Actions du dépôt donne la raison.
+
+Le jeton reste dans l'onglet du navigateur et disparaît à sa fermeture. Activer l'authentification à deux facteurs sur le compte GitHub.
 
 ## Ajouter un visuel de projet
 
