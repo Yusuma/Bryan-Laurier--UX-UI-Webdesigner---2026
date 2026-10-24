@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://yusuma.github.io/Bryan-Laurier--UX-UI-Webdesigner---2026/sitemap.xml
