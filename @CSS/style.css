@@ -90,9 +90,6 @@
 
   .row:nth-child(even) .row-track{color:var(--paper);-webkit-text-stroke:1.5px var(--ink);}
   .row:nth-child(even){background:var(--ink);}
-  .row:nth-child(3){background:var(--caramel);}
-  .row-track span:nth-child(even){color:var(--caramel);}
-  .row:nth-child(3) .row-track span:nth-child(even){color:var(--paper);}
 
 .scroll-hint{font-family:'Archivo',sans-serif;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;}
 
