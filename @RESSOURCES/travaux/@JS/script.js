@@ -1,19 +1,19 @@
 const overlay=document.getElementById('overlay'),infoBtn=document.getElementById('infoOpen');
 const unavailable=document.getElementById('unavailableModal'),epilepsy=document.getElementById('epilepsyModal');
-const stack=[];
+const stack=[],themeMeta=document.getElementById('themeColor');
 
 // Calques : fermés = inert (hors Tab et lecteurs d'écran), focus rendu au déclencheur
 [overlay,unavailable,epilepsy].forEach(el=>{el.inert=true;});
 function openLayer(el,trigger){
   el.inert=false;el.classList.add('open');
   stack.push({el,trigger});
-  if(el===overlay){document.body.style.overflow='hidden';infoBtn.setAttribute('aria-expanded','true');}
+  if(el===overlay){document.body.style.overflow='hidden';infoBtn.setAttribute('aria-expanded','true');themeMeta.content='#FFF8F0';}
   el.querySelector('[data-close]').focus();
 }
 function closeLayer(){
   const top=stack.pop();if(!top)return;
   top.el.classList.remove('open');top.el.inert=true;
-  if(top.el===overlay){document.body.style.overflow='';infoBtn.setAttribute('aria-expanded','false');}
+  if(top.el===overlay){document.body.style.overflow='';infoBtn.setAttribute('aria-expanded','false');themeMeta.content='#4B2E2B';}
   if(top.trigger)top.trigger.focus();
 }
 infoBtn.addEventListener('click',()=>openLayer(overlay,infoBtn));
