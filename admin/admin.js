@@ -9,14 +9,14 @@ const DATES=[['title','Titre','text'],['desc','Description','textarea'],['dates'
 const SECTIONS=[
  {id:'colors',title:'Couleurs',fields:[['colors.dark','Sombre : fond de l\'accueil, texte du panneau','color'],['colors.light','Clair : texte de l\'accueil, fond du panneau','color'],['colors.mid','Brun secondaire : descriptions','color'],['colors.accent','Accent : tuiles sans image','color']]},
  {id:'home',title:'Accueil',fields:[['hero.rows','Bandes du mur de texte','strlist'],['hero.hint','Indication en bas de page','text'],['hero.h1','Titre masqué (lecteurs d\'écran, Google)','text'],['meta.title','Titre de l\'onglet et du partage','text'],['meta.description','Description pour Google','textarea'],['meta.jobTitle','Métier (données structurées)','text']]},
- {id:'bio',title:'Bio',fields:[['bio.paragraphs','Paragraphes','strlist-area'],['bio.skills','Compétences','strlist'],['bio.languages','Langues','text'],['bio.cv','Fichier du CV','text'],['bio.portfolio','Fichier du portfolio','text']]},
+ {id:'bio',title:'Bio',fields:[['bio.paragraphs','Paragraphes','strlist-area'],['bio.skills','Compétences','strlist'],['bio.languages','Langues','text'],['bio.cv','Fichier du CV','text']]},
  {id:'formations',title:'Formations',fields:[['formations','Formations','objlist',DATES]]},
  {id:'experiences',title:'Expériences',fields:[['experiences','Expériences','objlist',DATES]]},
  {id:'projects',title:'Travaux',fields:[['projects','Projets','objlist',[
    ['slug','Identifiant (minuscules, chiffres, tirets)','text'],['title','Nom du projet','text'],['desc','Description','textarea'],['status','Statut et année','text'],
    ['devices','Compatibilité','devices'],['action.type','Action','select',[['link','Lien externe'],['epilepsy','Lien avec avertissement épilepsie'],['unavailable','Indisponible']]],
    ['action.label','Texte du bouton','text'],['action.url','Adresse (https://)','text'],['alt','Texte alternatif de l\'image','text'],['image','Visuel (1200 x 900, converti en WebP)','image']]],
-   ['behance','Page Behance (https://)','text']]},
+   ['behance','Page Behance : tuile « Plus de projets » et bouton Portfolio (https://)','text']]},
  {id:'contact',title:'Contact',fields:[['contact.email_user','Email : partie avant @','text'],['contact.email_domain','Email : domaine','text'],['contact.phone_a','Téléphone : début','text'],['contact.phone_b','Téléphone : fin','text'],['socials','Réseaux','objlist',[['label','Sigle (2 lettres)','text'],['name','Nom complet','text'],['url','Adresse (https://)','text']]]]}
 ];
 const DEFAULTS={projects:{slug:'nouveau-projet',title:'Nouveau projet',desc:'',status:'',devices:[],action:{type:'unavailable',url:'',label:'Indisponible'},alt:'Aperçu du projet'},formations:{title:'',desc:'',dates:''},experiences:{title:'',desc:'',dates:''},socials:{label:'',name:'',url:''}};

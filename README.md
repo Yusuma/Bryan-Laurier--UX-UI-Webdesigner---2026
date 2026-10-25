@@ -33,7 +33,6 @@ sitemap.xml, robots.txt
 @JS/contact.js         email et téléphone assemblés côté navigateur
 @RESSOURCES/travaux/   visuels des cartes de la section Travaux
 cv.pdf                 à ajouter
-portfolio.pdf          à ajouter
 ```
 
 ## Back office

@@ -42,8 +42,7 @@
       "Github"
     ],
     "languages": "Langues : français natif, anglais courant.",
-    "cv": "cv.pdf",
-    "portfolio": "portfolio.pdf"
+    "cv": "cv.pdf"
   },
   "formations": [
     {
@@ -154,10 +153,7 @@
       "title": "LCHS SUD 41",
       "desc": "Refonte association contre le harcèlement scolaire",
       "status": "Livré · 2023",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
+      "devices": [],
       "action": {
         "type": "unavailable",
         "url": "",
@@ -170,10 +166,7 @@
       "title": "ToutaElle.com",
       "desc": "E-commerce mode féminine",
       "status": "Livré · 2023",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
+      "devices": [],
       "action": {
         "type": "unavailable",
         "url": "",
@@ -185,65 +178,14 @@
       "slug": "awaplaisir",
       "title": "Awaplaisir",
       "desc": "Site vitrine mobilier",
-      "status": "Livré · 2022",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
+      "status": "2022",
+      "devices": [],
       "action": {
         "type": "unavailable",
         "url": "",
         "label": "Indisponible"
       },
       "alt": "Aperçu du projet Awaplaisir"
-    },
-    {
-      "slug": "qb-script-wiki",
-      "title": "QB Script",
-      "desc": "QB Script est un framework FiveM qui permet de créer un serveur RolePlay avec des scripts développés, par les créateurs du framework, mais également des scripts conçus par les développeurs et les utilisateurs eux-mêmes. Afin de permettre à chacun de comprendre leur fonctionnement, nous avons décidé de créer un site de type Wiki pour partager nos connaissances sur ces différents scripts.",
-      "status": "Prototype · 2021",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
-      "action": {
-        "type": "link",
-        "url": "https://www.figma.com/file/T6RwOHaOK3ZihP1OYe9l9p/QB-Wiki?type=design&node-id=0%3A1&mode=design&t=TSRbS6ihK5ZkswWo-1",
-        "label": "Voir la maquette Figma"
-      },
-      "alt": "Aperçu du projet"
-    },
-    {
-      "slug": "digit-website",
-      "title": "Digit. Website",
-      "desc": "Voici la structure du site web du groupe Digit. Notre objectif est de proposer des services dans le domaine du multimédia, et plus particulièrement dans la création de sites web.",
-      "status": "Prototype · 2022",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
-      "action": {
-        "type": "link",
-        "url": "https://www.figma.com/file/7lAuH4MbA9FyDewZjBKyBA/digitize-website?type=design&node-id=0%3A1&mode=design&t=LYgglbMEnYz4WMGh-1",
-        "label": "Voir la maquette Figma"
-      },
-      "alt": "Aperçu du projet"
-    },
-    {
-      "slug": "sharly-app",
-      "title": "Sharly App",
-      "desc": "Sharly est une application mobile prototype réalisée dans le cadre de ma formation en UI/UX et webdesign. Nous avons conçu ce prototype sur Figma afin de répondre aux besoins d’information des étudiants et de les aider à mieux s’organiser dans leur vie quotidienne. Nous avons travaillé en équipe de cinq personnes sur ce projet.",
-      "status": "Prototype · 2021",
-      "devices": [
-        "desktop",
-        "mobile"
-      ],
-      "action": {
-        "type": "link",
-        "url": "https://www.figma.com/file/q21MC2QRV35qYOklPKxujQ/Sharly-Proto-Team?type=design&node-id=0%3A1&mode=design&t=sRV8wmXWcCs9Cpte-1",
-        "label": "Voir la maquette Figma"
-      },
-      "alt": "Aperçu du projet"
     }
   ],
   "behance": "https://www.behance.net/bryanlaurierdesign",

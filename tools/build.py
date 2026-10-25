@@ -27,7 +27,7 @@ def text(v, label, n=400):
 def validate(d):
     for k, v in d['colors'].items(): need(HEX.match(v), f'couleur {k} invalide ({v})')
     need(URL.match(d['behance']), 'lien Behance invalide (https:// obligatoire)')
-    for f in ('cv', 'portfolio'): need(FILE.match(d['bio'][f]), f'fichier {f} invalide')
+    need(FILE.match(d['bio']['cv']), 'fichier du CV invalide')
     for s in d['socials']: need(URL.match(s['url']) and re.match(r'^\w{1,4}$', s['label']), f"réseau {s['name']} invalide")
     for p in d['projects']:
         need(SLUG.match(p['slug']), f"identifiant de projet invalide ({p['slug']})")
@@ -90,8 +90,8 @@ def render(d):
       'ROWS': rows.rstrip('\n'),
       'HINT': e(d['hero']['hint']),
       'BIO': ''.join(f'      <p>{e(p)}</p>\n' for p in b['paragraphs']) + f'      <div class="skills-row">{skills}</div>\n      <p class="langs">{e(b["languages"])}</p>\n'
-             f'      <div class="cta-row">\n        <a href="{e(b["cv"])}" target="_blank" rel="noopener noreferrer" class="filled">Télécharger CV</a>\n'
-             f'        <a href="{e(b["portfolio"])}" target="_blank" rel="noopener noreferrer">Télécharger portfolio</a>\n      </div>',
+             f'      <div class="cta-row">\n        <a href="{e(b["cv"])}" download="CV-Bryan-Laurier.pdf" class="filled">Télécharger CV</a>\n'
+             f'        <a href="{e(d["behance"])}" target="_blank" rel="noopener noreferrer">Voir le portfolio sur Behance</a>\n      </div>',
       'FORMATIONS': items(d['formations']), 'EXPERIENCES': items(d['experiences']),
       'GALLERY': '      <ul class="gallery">\n' + ''.join(card(p) for p in d['projects']) + f'</ul>\n      <a class="behance-more" href="{e(d["behance"])}" target="_blank" rel="noopener noreferrer">Plus de projets sur Behance</a>',
       'CONTACT': f'      <div class="contact-row">\n        <a href="#contact" data-mail data-u="{e(c["email_user"])}" data-d="{e(c["email_domain"])}">{e(c["email_user"])} [at] {e(c["email_domain"])}</a>\n'
