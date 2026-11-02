@@ -85,6 +85,21 @@
   ],
   "projects": [
     {
+      "slug": "galactikfootballmanager",
+      "title": "Galactik Football Manager",
+      "desc": "Jeu de gestion 7 contre 7 inspiré de Galactik Football. Dirigez un club de la Galactik League, la sélection d’une planète dans la Galactik Cup, ou les deux.\n\nProjet de fan, gratuit et sans but lucratif. Non affilié aux ayants droit de la série. Version actuelle : 1.29.0.0 (bêta)\n\nLe jeu tient dans une seule page web (index.html) : aucune installation, aucun serveur, aucun compte, aucune publicité.",
+      "status": "Bêta · Septembre 2026",
+      "devices": [
+        "desktop"
+      ],
+      "action": {
+        "type": "link",
+        "url": "https://yusuma.github.io/Galactik-Football-Manager/",
+        "label": "Jouer"
+      },
+      "alt": "Aperçu du projet"
+    },
+    {
       "slug": "cwideo",
       "title": "Cwideo",
       "desc": "Aide à la rédaction de CV",
